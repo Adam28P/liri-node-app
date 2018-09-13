@@ -23,7 +23,7 @@
 <h2>What Each Command Does</h2>
 <ol>
 <li>node liri.js concert-this</li>
-<li>node liri.js spotify-this-song</li>
+<li>node liri.js spotify-this-song <song name></li>
 <li>node liri.js movie-this</li>
 <li>node liri.js do-what-it-says</li>
 </ol>
