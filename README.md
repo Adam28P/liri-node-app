@@ -22,8 +22,11 @@
 
 <h2>What Each Command Does</h2>
 <ol>
-<li>node liri.js concert-this</li>
-<li>node liri.js spotify-this-song <song name></li>
-<li>node liri.js movie-this</li>
+<li>node liri.js concert-this 'artist/band name'</li>
+<ul>
+<li>Shows the following information about the artist's/band's upcoming concerts in terminal/bash window:</li>
+</ul>
+<li>node liri.js spotify-this-song 'song name'</li>
+<li>node liri.js movie-this 'movie name'</li>
 <li>node liri.js do-what-it-says</li>
 </ol>
