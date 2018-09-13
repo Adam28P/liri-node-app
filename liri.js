@@ -3,6 +3,7 @@ require("dotenv").config();
 var keys = require('./keys.js');
 var Spotify = require('node-spotify-api');
 var request = require('request');
+var moment = require('moment');
 var fs = require('fs');
 
 var spotify = new Spotify(keys.spotify);
@@ -22,6 +23,14 @@ for (var i = 3; i < nodeArgv.length; i++) {
 
 //switch case
 switch (command) {
+
+    case "concert-this":
+        if (x) {
+            findConcert(x);
+        } else {
+            findConcert("Bruno Mars");
+        }
+        break;
 
     case "spotify-this-song":
         if (x) {
@@ -48,6 +57,32 @@ switch (command) {
         break;
 }
 
+function findConcert(artist) {
+
+    request('https://rest.bandsintown.com/artists/' + artist + '/events?app_id=codingbootcamp', {
+        json: true
+    }, (err, res, body) => {
+        if (err) {
+            return console.log(err);
+        }
+        //name of the venue
+        for (var i = 0; i < body.length; i++) {
+            console.log("Venue Name: " + body[i].venue.name);
+            //venue location
+            console.log("Venue Location: " + body[i].venue.city + ", " + body[i].venue.country);
+            //date of event(MM/DD/YYYY)
+            console.log("Date of Event: " + moment(body[i].datetime).format('MM/DD/YYYY'));
+            console.log("-----------------------");
+
+            // adds text to log.txt
+            fs.appendFile('log.txt', body[i].venue.name + '\n', (error) => { /* handle error */ });
+            fs.appendFile('log.txt', body[i].venue.city + ", " + body[i].venue.country + '\n', (error) => { /* handle error */ });
+            fs.appendFile('log.txt', moment(body[i].datetime).format('MM/DD/YYYY') + '\n', (error) => { /* handle error */ });
+            fs.appendFile('log.txt', "-----------------------" + '\n', (error) => { /* handle error */ });
+        }
+    });
+}
+
 function spotifySong(song) {
     spotify.search({
         type: 'track',
@@ -66,12 +101,12 @@ function spotifySong(song) {
                 console.log("Album: " + songData.album.name);
                 console.log("-----------------------");
 
-                //adds text to log.txt
-                //   fs.appendFile('log.txt', songData.artists[0].name);
-                //   fs.appendFile('log.txt', songData.name);
-                //   fs.appendFile('log.txt', songData.preview_url);
-                //   fs.appendFile('log.txt', songData.album.name);
-                //   fs.appendFile('log.txt', "-----------------------");
+                // adds text to log.txt
+                fs.appendFile('log.txt', songData.artists[0].name + '\n', (error) => { /* handle error */ });
+                fs.appendFile('log.txt', songData.name + '\n', (error) => { /* handle error */ });
+                fs.appendFile('log.txt', songData.preview_url + '\n', (error) => { /* handle error */ });
+                fs.appendFile('log.txt', songData.album.name + '\n', (error) => { /* handle error */ });
+                fs.appendFile('log.txt', "-----------------------" + '\n', (error) => { /* handle error */ });
             }
         } else {
             console.log('Error occurred.');
