@@ -138,3 +138,23 @@ Rotten Tomatoes Rating: 91%
 Plot: It's Harry's third year at Hogwarts; not only does he have a new "Defense Against the Dark Arts" teacher, but there is also trouble brewing. Convicted murderer Sirius Black has escaped the Wizards' Prison and is coming after Harry.
 Actors: Daniel Radcliffe, Richard Griffiths, Pam Ferris, Fiona Shaw
 -----------------------
+---------- MOVIE-THIS ----------
+Title: Harry Potter and the Prisoner of Azkaban
+Release Year: 2004
+Rotten Tomatoes Rating: 91%
+IMDB Rating: 7.9
+Language: English
+Country: UK, USA
+Plot: It's Harry's third year at Hogwarts; not only does he have a new "Defense Against the Dark Arts" teacher, but there is also trouble brewing. Convicted murderer Sirius Black has escaped the Wizards' Prison and is coming after Harry.
+Actors: Daniel Radcliffe, Richard Griffiths, Pam Ferris, Fiona Shaw
+-----------------------
+---------- MOVIE-THIS ----------
+Title: Harry Potter and the Prisoner of Azkaban
+IMDB Rating: 7.9
+Release Year: 2004
+Rotten Tomatoes Rating: 91%
+Language: English
+Country: UK, USA
+Plot: It's Harry's third year at Hogwarts; not only does he have a new "Defense Against the Dark Arts" teacher, but there is also trouble brewing. Convicted murderer Sirius Black has escaped the Wizards' Prison and is coming after Harry.
+-----------------------
+Actors: Daniel Radcliffe, Richard Griffiths, Pam Ferris, Fiona Shaw
