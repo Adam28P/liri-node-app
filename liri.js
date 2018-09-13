@@ -50,7 +50,7 @@ switch (command) {
         if (x) {
             omdbData(x)
         } else {
-            omdbData("Harry Potter")
+            omdbData("Harry Potter and the Prisoner of Azkaban")
         }
         break;
 

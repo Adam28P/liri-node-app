@@ -128,3 +128,13 @@ Aloha Stadium
 Honolulu, United States
 11/11/2018
 -----------------------
+---------- MOVIE-THIS ----------
+Release Year: 2004
+IMDB Rating: 7.9
+Title: Harry Potter and the Prisoner of Azkaban
+Language: English
+Country: UK, USA
+Rotten Tomatoes Rating: 91%
+Plot: It's Harry's third year at Hogwarts; not only does he have a new "Defense Against the Dark Arts" teacher, but there is also trouble brewing. Convicted murderer Sirius Black has escaped the Wizards' Prison and is coming after Harry.
+Actors: Daniel Radcliffe, Richard Griffiths, Pam Ferris, Fiona Shaw
+-----------------------
