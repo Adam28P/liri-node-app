@@ -1,11 +1,11 @@
 require("dotenv").config();
 
 var keys = require('./keys.js');
-var spotify = require('spotify');
+var Spotify = require('node-spotify-api');
 var request = require('request');
 var fs = require('fs');
 
-var spotifyKeys = new Spotify(keys.spotify);
+var spotify = new Spotify(keys.spotify);
 
 var nodeArgv = process.argv;
 var command = process.argv[2];
@@ -44,12 +44,12 @@ switch (command) {
         break;
 
     default:
-        console.log("{Please enter a command: my-tweets, spotify-this-song, movie-this, do-what-it-says}");
+        console.log("{Please enter a command: concert-this, spotify-this-song, movie-this, do-what-it-says}");
         break;
 }
 
 function spotifySong(song) {
-    spotifyKeys.search({
+    spotify.search({
         type: 'track',
         query: song
     }, function (error, data) {
