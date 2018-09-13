@@ -1,5 +1,7 @@
 <h1>Liri Bot App</h1>
+<hr />
 <h3>LIRI is a command line node app that takes in parameters and returns data based on one of four commands:
+<br />
 <ul>
 <li>concert-this</li>
 <li>spotify-this-song</li>
