@@ -73,6 +73,7 @@ function findConcert(artist) {
         }
         //name of the venue
         for (var i = 0; i < body.length; i++) {
+            console.log("---------- CONCERT-THIS ----------");
             // console.log response to user
             console.log("Venue Name: " + body[i].venue.name);
             //venue location
@@ -82,6 +83,7 @@ function findConcert(artist) {
             console.log("-----------------------");
 
             // adds text to log.txt
+            fs.appendFile('log.txt', "---------- CONCERT-THIS ----------" + '\n', (error) => { /* handle error */ });
             fs.appendFile('log.txt', body[i].venue.name + '\n', (error) => { /* handle error */ });
             fs.appendFile('log.txt', body[i].venue.city + ", " + body[i].venue.country + '\n', (error) => { /* handle error */ });
             fs.appendFile('log.txt', moment(body[i].datetime).format('MM/DD/YYYY') + '\n', (error) => { /* handle error */ });
@@ -100,6 +102,7 @@ function spotifySong(song) {
             for (var i = 0; i < data.tracks.items.length; i++) {
                 // console.log response to user
                 var songData = data.tracks.items[i];
+                console.log("---------- SPOTIFY-THIS-SONG ----------");
                 //artist
                 console.log("Artist: " + songData.artists[0].name);
                 //song name
@@ -111,6 +114,7 @@ function spotifySong(song) {
                 console.log("-----------------------");
 
                 // adds text to log.txt
+                fs.appendFile('log.txt', "---------- SPOTIFY-THIS-SONG ----------" + '\n', (error) => { /* handle error */ });
                 fs.appendFile('log.txt', songData.artists[0].name + '\n', (error) => { /* handle error */ });
                 fs.appendFile('log.txt', songData.name + '\n', (error) => { /* handle error */ });
                 fs.appendFile('log.txt', songData.preview_url + '\n', (error) => { /* handle error */ });
@@ -134,6 +138,7 @@ function omdbData(movie) {
         }
 
         // console.log response to user
+        console.log("---------- MOVIE-THIS ----------");
         console.log("Movie Title: " + body.Title);
         console.log("Release Year: " + body.Year);
         console.log("IMDB Rating: " + body.imdbRating);
@@ -144,6 +149,7 @@ function omdbData(movie) {
         console.log("Actors: " + body.Actors);
 
         //adds text to log.txt
+        fs.appendFile('log.txt', "---------- MOVIE-THIS ----------" + '\n', (error) => { /* handle error */ });
         fs.appendFile('log.txt', "Title: " + body.Title + '\n', (error) => { /* handle error */ });
         fs.appendFile('log.txt', "Release Year: " + body.Year + '\n', (error) => { /* handle error */ });
         fs.appendFile('log.txt', "IMDB Rating: " + body.imdbRating + '\n', (error) => { /* handle error */ });
