@@ -32,7 +32,7 @@ switch (command) {
         if (x) {
             spotifySong(x);
         } else {
-            spotifySong("Fluorescent Adolescent");
+            spotifySong("Hotel California");
         }
         break;
 
@@ -40,7 +40,7 @@ switch (command) {
         if (x) {
             omdbData(x)
         } else {
-            omdbData("Mr. Nobody")
+            omdbData("Harry Potter")
         }
         break;
 
