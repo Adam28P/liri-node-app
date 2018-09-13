@@ -1,6 +1,10 @@
+// initalize variables
 require("dotenv").config();
 
+// get data from keys
 var keys = require('./keys.js');
+
+// require npm packages
 var Spotify = require('node-spotify-api');
 var request = require('request');
 var moment = require('moment');
@@ -8,11 +12,13 @@ var fs = require('fs');
 
 var spotify = new Spotify(keys.spotify);
 
+// console input for user
 var nodeArgv = process.argv;
 var command = process.argv[2];
 
 var x = "";
-//attaches multiple word arguments
+
+//attaches multiple words together in a string on the same line in console
 for (var i = 3; i < nodeArgv.length; i++) {
     if (i > 3 && i < nodeArgv.length) {
         x = x + "+" + nodeArgv[i];
@@ -21,7 +27,7 @@ for (var i = 3; i < nodeArgv.length; i++) {
     }
 }
 
-//switch case
+//switch case for each different command
 switch (command) {
 
     case "concert-this":
@@ -57,8 +63,8 @@ switch (command) {
         break;
 }
 
+// function for 'concert-this'
 function findConcert(artist) {
-
     request('https://rest.bandsintown.com/artists/' + artist + '/events?app_id=codingbootcamp', {
         json: true
     }, (err, res, body) => {
@@ -67,6 +73,7 @@ function findConcert(artist) {
         }
         //name of the venue
         for (var i = 0; i < body.length; i++) {
+            // console.log response to user
             console.log("Venue Name: " + body[i].venue.name);
             //venue location
             console.log("Venue Location: " + body[i].venue.city + ", " + body[i].venue.country);
@@ -83,6 +90,7 @@ function findConcert(artist) {
     });
 }
 
+// function for 'spotify-this-song'
 function spotifySong(song) {
     spotify.search({
         type: 'track',
@@ -90,6 +98,7 @@ function spotifySong(song) {
     }, function (error, data) {
         if (!error) {
             for (var i = 0; i < data.tracks.items.length; i++) {
+                // console.log response to user
                 var songData = data.tracks.items[i];
                 //artist
                 console.log("Artist: " + songData.artists[0].name);
@@ -114,6 +123,7 @@ function spotifySong(song) {
     });
 }
 
+// function for 'movie-this'
 function omdbData(movie) {
 
     request('http://www.omdbapi.com/?t=' + movie + '&plot=short&tomatoes=true&apikey=trilogy', {
@@ -123,6 +133,7 @@ function omdbData(movie) {
             console.log('Error occurred.');
         }
 
+        // console.log response to user
         console.log("Movie Title: " + body.Title);
         console.log("Release Year: " + body.Year);
         console.log("IMDB Rating: " + body.imdbRating);
@@ -146,10 +157,10 @@ function omdbData(movie) {
     });
 }
 
+// function for 'do-what-it-says'
 function doThing() {
     fs.readFile('random.txt', "utf8", function (error, data) {
         var txt = data.split(',');
-
         spotifySong(txt[1]);
     });
 }
