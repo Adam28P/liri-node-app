@@ -15,7 +15,15 @@
 
 <h2>Getting Started</h2>
 <ul>
-<li>Clone the repsoitory to your computer</li>
+<li>Clone the repository to your computer</li>
 <li>Run command 'npm install'</li>
 <li>Run command 'node liri.js' or one of the commands above</li>
 </ul>
+
+<h2>What Each Command Does</h2>
+<ol>
+<li>node liri.js concert-this</li>
+<li>node liri.js spotify-this-song</li>
+<li>node liri.js movie-this</li>
+<li>node liri.js do-what-it-says</li>
+</ol>
