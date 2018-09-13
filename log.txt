@@ -158,3 +158,263 @@ Country: UK, USA
 Plot: It's Harry's third year at Hogwarts; not only does he have a new "Defense Against the Dark Arts" teacher, but there is also trouble brewing. Convicted murderer Sirius Black has escaped the Wizards' Prison and is coming after Harry.
 -----------------------
 Actors: Daniel Radcliffe, Richard Griffiths, Pam Ferris, Fiona Shaw
+Little Caesars Arena
+---------- CONCERT-THIS ----------
+-----------------------
+Detroit, United States
+Detroit, United States
+---------- CONCERT-THIS ----------
+09/15/2018
+Little Caesars Arena
+09/16/2018
+-----------------------
+---------- CONCERT-THIS ----------
+Philadelphia, United States
+09/19/2018
+-----------------------
+---------- CONCERT-THIS ----------
+Wells Fargo Center
+Wells Fargo Center
+Philadelphia, United States
+09/20/2018
+-----------------------
+---------- CONCERT-THIS ----------
+Toronto, Canada
+Air Canada Centre
+-----------------------
+Air Canada Centre
+---------- CONCERT-THIS ----------
+09/23/2018
+-----------------------
+---------- CONCERT-THIS ----------
+Toronto, Canada
+TD Garden
+Boston, United States
+09/27/2018
+-----------------------
+---------- CONCERT-THIS ----------
+TD Garden
+Boston, United States
+09/28/2018
+-----------------------
+09/22/2018
+---------- CONCERT-THIS ----------
+Newark, United States
+Prudential Center
+10/01/2018
+-----------------------
+---------- CONCERT-THIS ----------
+Prudential Center
+Newark, United States
+-----------------------
+10/02/2018
+Brooklyn, United States
+---------- CONCERT-THIS ----------
+-----------------------
+10/04/2018
+Barclays Center
+---------- CONCERT-THIS ----------
+Brooklyn, United States
+-----------------------
+Barclays Center
+Bridgestone Arena
+---------- CONCERT-THIS ----------
+10/05/2018
+Nashville, United States
+10/07/2018
+-----------------------
+---------- CONCERT-THIS ----------
+10/08/2018
+Bridgestone Arena
+Nashville, United States
+BOK Center
+---------- CONCERT-THIS ----------
+Tulsa, United States
+10/11/2018
+-----------------------
+---------- CONCERT-THIS ----------
+BOK Center
+Tulsa, United States
+10/12/2018
+-----------------------
+-----------------------
+---------- CONCERT-THIS ----------
+Dallas, United States
+American Airlines Center
+10/14/2018
+-----------------------
+American Airlines Center
+Dallas, United States
+---------- CONCERT-THIS ----------
+-----------------------
+Circuit Of the Americas
+Austin, United States
+---------- CONCERT-THIS ----------
+10/15/2018
+-----------------------
+10/20/2018
+Staples Center
+Los Angeles, United States
+10/23/2018
+---------- CONCERT-THIS ----------
+Staples Center
+Los Angeles, United States
+---------- CONCERT-THIS ----------
+10/24/2018
+-----------------------
+Staples Center
+-----------------------
+---------- CONCERT-THIS ----------
+10/26/2018
+Los Angeles, United States
+-----------------------
+---------- CONCERT-THIS ----------
+Los Angeles, United States
+Staples Center
+-----------------------
+10/27/2018
+Aloha Stadium
+---------- CONCERT-THIS ----------
+Honolulu, United States
+-----------------------
+---------- CONCERT-THIS ----------
+Aloha Stadium
+11/08/2018
+Honolulu, United States
+11/10/2018
+-----------------------
+Honolulu, United States
+---------- CONCERT-THIS ----------
+11/11/2018
+-----------------------
+Aloha Stadium
+Little Caesars Arena
+Detroit, United States
+---------- CONCERT-THIS ----------
+09/15/2018
+-----------------------
+---------- CONCERT-THIS ----------
+Detroit, United States
+-----------------------
+Little Caesars Arena
+09/16/2018
+---------- CONCERT-THIS ----------
+Philadelphia, United States
+Wells Fargo Center
+09/19/2018
+-----------------------
+Wells Fargo Center
+---------- CONCERT-THIS ----------
+Philadelphia, United States
+-----------------------
+09/20/2018
+---------- CONCERT-THIS ----------
+Air Canada Centre
+Toronto, Canada
+-----------------------
+09/22/2018
+Toronto, Canada
+Air Canada Centre
+---------- CONCERT-THIS ----------
+09/23/2018
+Boston, United States
+-----------------------
+---------- CONCERT-THIS ----------
+09/27/2018
+-----------------------
+TD Garden
+---------- CONCERT-THIS ----------
+TD Garden
+09/28/2018
+-----------------------
+---------- CONCERT-THIS ----------
+Prudential Center
+Boston, United States
+10/01/2018
+-----------------------
+Newark, United States
+---------- CONCERT-THIS ----------
+Prudential Center
+Newark, United States
+10/02/2018
+-----------------------
+---------- CONCERT-THIS ----------
+Barclays Center
+Brooklyn, United States
+-----------------------
+10/04/2018
+---------- CONCERT-THIS ----------
+Brooklyn, United States
+Barclays Center
+-----------------------
+10/05/2018
+Nashville, United States
+Bridgestone Arena
+10/07/2018
+---------- CONCERT-THIS ----------
+Bridgestone Arena
+-----------------------
+---------- CONCERT-THIS ----------
+Nashville, United States
+10/08/2018
+-----------------------
+Tulsa, United States
+---------- CONCERT-THIS ----------
+BOK Center
+-----------------------
+10/11/2018
+Tulsa, United States
+---------- CONCERT-THIS ----------
+BOK Center
+10/12/2018
+-----------------------
+American Airlines Center
+10/14/2018
+---------- CONCERT-THIS ----------
+-----------------------
+Dallas, United States
+American Airlines Center
+---------- CONCERT-THIS ----------
+Dallas, United States
+10/15/2018
+-----------------------
+---------- CONCERT-THIS ----------
+Circuit Of the Americas
+Austin, United States
+10/20/2018
+-----------------------
+---------- CONCERT-THIS ----------
+Staples Center
+Los Angeles, United States
+10/23/2018
+-----------------------
+---------- CONCERT-THIS ----------
+Staples Center
+Los Angeles, United States
+10/24/2018
+-----------------------
+Staples Center
+---------- CONCERT-THIS ----------
+Los Angeles, United States
+10/26/2018
+-----------------------
+---------- CONCERT-THIS ----------
+Los Angeles, United States
+Staples Center
+-----------------------
+10/27/2018
+Aloha Stadium
+---------- CONCERT-THIS ----------
+11/08/2018
+Honolulu, United States
+-----------------------
+Honolulu, United States
+Aloha Stadium
+---------- CONCERT-THIS ----------
+-----------------------
+Aloha Stadium
+---------- CONCERT-THIS ----------
+11/10/2018
+Honolulu, United States
+-----------------------
+11/11/2018
