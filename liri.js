@@ -63,7 +63,7 @@ function findConcert(artist) {
         json: true
     }, (err, res, body) => {
         if (err) {
-            return console.log(err);
+            console.log('Error occurred.');
         }
         //name of the venue
         for (var i = 0; i < body.length; i++) {
@@ -114,13 +114,13 @@ function spotifySong(song) {
     });
 }
 
-function omdbData(movie){
+function omdbData(movie) {
 
     request('http://www.omdbapi.com/?t=' + movie + '&plot=short&tomatoes=true&apikey=trilogy', {
         json: true
     }, (err, res, body) => {
         if (err) {
-            return console.log(err);
+            console.log('Error occurred.');
         }
 
         console.log("Movie Title: " + body.Title);
@@ -131,7 +131,7 @@ function omdbData(movie){
         console.log("Language: " + body.Language);
         console.log("Plot: " + body.Plot);
         console.log("Actors: " + body.Actors);
-  
+
         //adds text to log.txt
         fs.appendFile('log.txt', "Title: " + body.Title + '\n', (error) => { /* handle error */ });
         fs.appendFile('log.txt', "Release Year: " + body.Year + '\n', (error) => { /* handle error */ });
@@ -144,8 +144,12 @@ function omdbData(movie){
         fs.appendFile('log.txt', "-----------------------" + '\n', (error) => { /* handle error */ });
 
     });
-   
-  
 }
-  
-    
+
+function doThing() {
+    fs.readFile('random.txt', "utf8", function (error, data) {
+        var txt = data.split(',');
+
+        spotifySong(txt[1]);
+    });
+}
