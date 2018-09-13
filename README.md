@@ -31,7 +31,34 @@
 <li>Date of event</li>
 </ul>
 </ul>
-<li>node liri.js spotify-this-song 'song name'</li>
-<li>node liri.js movie-this 'movie name'</li>
-<li>node liri.js do-what-it-says</li>
+<strong><li>node liri.js spotify-this-song 'song name'</li></strong>
+<ul>
+<li>Shows the following information about the song in terminal/bash window:</li>
+<ul>
+<li>Artist(s)</li>
+<li>The song's name</li>
+<li>A preview link of the song from Spotify</li>
+<li>The album that the song is from</li>
+</ul>
+</ul>
+<strong><li>node liri.js movie-this 'movie name'</li></strong>
+<ul>
+<li>Shows the following information about the movie in terminal/bash window:</li>
+<ul>
+<li>Title of the movie</li>
+<li>Year the movie came out</li>
+<li>IMDB rating of the movie</li>
+<li>Rotten Tomatoes rating of the movie</li>
+<li>Country where the movie was produced</li>
+<li>Language of the movie</li>
+<li>Plot of the movie</li>
+<li>Actors in the movie</li>
+</ul>
+</ul>
+<strong><li>node liri.js do-what-it-says</li></strong>
+<ul>
+<li>It should run `spotify-this-song` for "I Want it That Way," as follows the text in `random.txt`</li>
+</ul>
 </ol>
+
+<h3>Have fun!</h3>
