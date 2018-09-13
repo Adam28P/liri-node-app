@@ -1,13 +1,11 @@
 require("dotenv").config();
 
 var keys = require('./keys.js');
-var twitter = require('twitter');
 var spotify = require('spotify');
 var request = require('request');
 var fs = require('fs');
 
-var spotifyKeys = new spotify(keys.spotify);
-var twitterKeys = new twitter(keys.twitter);
+var spotifyKeys = new Spotify(keys.spotify);
 
 var nodeArgv = process.argv;
 var command = process.argv[2];
@@ -24,9 +22,6 @@ for (var i = 3; i < nodeArgv.length; i++) {
 
 //switch case
 switch (command) {
-    case "my-tweets":
-        showTweets();
-        break;
 
     case "spotify-this-song":
         if (x) {
@@ -51,4 +46,35 @@ switch (command) {
     default:
         console.log("{Please enter a command: my-tweets, spotify-this-song, movie-this, do-what-it-says}");
         break;
+}
+
+function spotifySong(song) {
+    spotifyKeys.search({
+        type: 'track',
+        query: song
+    }, function (error, data) {
+        if (!error) {
+            for (var i = 0; i < data.tracks.items.length; i++) {
+                var songData = data.tracks.items[i];
+                //artist
+                console.log("Artist: " + songData.artists[0].name);
+                //song name
+                console.log("Song: " + songData.name);
+                //spotify preview link
+                console.log("Preview URL: " + songData.preview_url);
+                //album name
+                console.log("Album: " + songData.album.name);
+                console.log("-----------------------");
+
+                //adds text to log.txt
+                //   fs.appendFile('log.txt', songData.artists[0].name);
+                //   fs.appendFile('log.txt', songData.name);
+                //   fs.appendFile('log.txt', songData.preview_url);
+                //   fs.appendFile('log.txt', songData.album.name);
+                //   fs.appendFile('log.txt', "-----------------------");
+            }
+        } else {
+            console.log('Error occurred.');
+        }
+    });
 }
