@@ -13,4 +13,9 @@
 <h2>Screenshot</h2>
 <img src="liri-screenshot.png" width="800" alt="Liri Bot screenshot" />
 
-<h2>Application Logic</h2>
+<h2>Getting Started</h2>
+<ul>
+<li>Clone the repsoitory to your computer</li>
+<li>Run command 'npm install'</li>
+<li>Run command 'node liri.js' or one of the commands above</li>
+</ul>
